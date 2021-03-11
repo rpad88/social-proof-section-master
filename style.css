@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+
+    /* primary colors */
+    --primary1: hsl(300, 43%, 22%);
+    --primary2: hsl(333, 80%, 67%);
+
+    /* Neutral Colors */
+    --neutral1: hsl(303, 10%, 53%);
+    --neutral2: hsl(300, 24%, 96%);
+    --neutral3: hsl(0, 0%, 100%);
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--neutral3);
+    background-repeat: no-repeat;
+}
+/* Backgrounds */
+#bgTopDesktop, #bgBottomDesktop {
+    display: none;
+}
+#bgTopMobile{
+    position: absolute;
+    top: -10px;
+    /* border: 1px solid black; */
+    z-index: -1;
+}
+#bgBottomMobile{
+    position: fixed;
+    bottom: -150px;
+    z-index: -1;
+    /* border: 1px solid red; */
+}
+
+/* Container */
+.container{
+    
+    padding: 0 1rem;
+    width: 375px;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+}
+h2 {
+    width: 70%;
+    display: block;
+    margin: 5rem 5rem 1rem 5rem;
+    color: var(--primary1);    
+}
+p{
+    font-size: 15px;
+    text-align: center;
+    color: var(--primary1);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Ratings */
+.checked {  /* star rating color */
+    color: orange;
+}
+.ratings{
+      margin: 2rem 0;
+}
+.review{
+      background-color: var(--neutral2);
+      margin: 5px;
+      border-radius: 5px;
+      padding: 7px;
+      text-align: center;
+      
+}
+.review p{
+      color: var(--primary1);
+      font-weight: 500;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 15px;
+}
+
+  /* Testimonials */
+.testimonials{
+    display: inline-block;
+}
+.testimonials .buyer{
+    background-color: var(--primary1);
+    border-radius: 7px;
+    padding: 1rem;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.testimonials .buyer img {
+    border-radius: 50%;
+    width: 20%;
+}
+.testimonials .buyer .buyerHeader{
+    width: 10rem;
+    margin-top: 1rem;
+}
+.buyerHeader h5{
+    /* display: block; */
+    color: var(--neutral2);
+    margin-left: 1.6rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+.buyerHeader p {
+    /* display: block; */
+    color: var(--primary2);
+    font-size: 15px;
+}
+.testimonials .buyerBody {
+    margin-top: 1rem;
+}
+.buyerBody p{
+    color: var(--neutral2);
+    text-align: left;
+    font-weight: 400;
+}
